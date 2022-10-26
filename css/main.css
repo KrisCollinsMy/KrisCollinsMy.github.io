@@ -45,13 +45,22 @@ body {
 #navbar-section .container #hamburger-menu-button {
   position: fixed;
   top: 15px;
-  right: 10px;
   z-index: 100;
   display: flex;
   flex-direction: column;
   cursor: pointer;
   justify-content: center;
   gap: 5px;
+}
+@media (min-width: 200px) {
+  #navbar-section .container #hamburger-menu-button {
+    right: 10px;
+  }
+}
+@media (min-width: 800px) {
+  #navbar-section .container #hamburger-menu-button {
+    left: 10px;
+  }
 }
 #navbar-section .container #hamburger-menu-button .line {
   width: 30px;
@@ -289,6 +298,21 @@ body {
   padding: 5rem 1.5rem;
   color: var(--dark-gray-color);
 }
+@media (min-width: 800px) {
+  #about-me-section .container .about-me-description {
+    padding: 0 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  #about-me-section .container .about-me-description {
+    padding: 0 5rem;
+  }
+}
+@media (min-width: 1300px) {
+  #about-me-section .container .about-me-description {
+    padding: 0;
+  }
+}
 #about-me-section .container .about-me-description h2 {
   color: #000;
   font-weight: 700;
@@ -383,7 +407,7 @@ body {
   display: grid;
   justify-content: space-around;
   align-items: flex-start;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   column-gap: 1rem;
   row-gap: 2rem;
   margin-top: 2.5rem;
@@ -429,6 +453,7 @@ body {
   background: rgb(39, 39, 39);
   padding: 5rem 0 2rem 0;
   font-size: 1rem;
+  padding-bottom: 3rem;
 }
 #work-section h2 {
   font-weight: 700;
@@ -482,7 +507,12 @@ body {
 }
 @media (min-width: 1200px) {
   #work-section .work-container .work-experience-description {
-    padding: 1rem 16rem;
+    padding: 1rem 11rem;
+  }
+}
+@media (min-width: 1300px) {
+  #work-section .work-container .work-experience-description {
+    padding: 1rem 25rem;
   }
 }
 #work-section .work-container .work-experience-description .job-title {
@@ -506,6 +536,11 @@ body {
   line-height: 1.3;
   list-style-type: none;
   margin-bottom: 0.5rem;
+}
+#work-section .work-container .work-experience-description ul li a {
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
 }
 #work-section .work-container .work-experience-description ul li::before {
   content: "▹";
@@ -537,12 +572,14 @@ body {
 #projects-section .button-group {
   list-style: none;
   overflow: hidden;
-  font-size: 0.9em;
+  font-size: 1.2em;
   display: block;
   margin: 0 auto;
   text-align: center;
 }
 #projects-section .button-group .active {
+  border-style: none;
+  border: 0px;
   color: #000;
   background: #ffffcb;
 }
@@ -559,6 +596,8 @@ body {
   color: black;
 }
 #projects-section .button-group button:active {
+  border-style: none;
+  border: 0px;
   background: #ffffcb;
 }
 #projects-section .projects:after {
@@ -669,7 +708,7 @@ body {
 }
 #projects-section .projects .project .card .card-overlay .card-description {
   text-align: left;
-  font-size: 15px;
+  font-size: 17px;
 }
 #projects-section .projects .project .card .card-overlay .card-technologies {
   font-size: 15px;
@@ -724,7 +763,7 @@ body {
 }
 #contact-me-section button:hover {
   color: rgb(0, 0, 0);
-  background: rgba(255, 255, 255, 0.726);
+  background: #ffffcb;
 }
 #contact-me-section .social-media-links {
   margin-top: 2rem;
