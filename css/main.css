@@ -450,7 +450,7 @@ body {
   position: relative;
   width: 100vw;
   color: white;
-  background: rgb(39, 39, 39);
+  background: rgb(71, 71, 71);
   padding: 5rem 0 2rem 0;
   font-size: 1rem;
   padding-bottom: 3rem;
@@ -524,7 +524,7 @@ body {
   color: #ffffcb;
 }
 #work-section .work-container .work-experience-description .period {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-family: "Courier New", Courier, monospace;
   margin: 0.5rem 0;
 }
