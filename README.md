@@ -1,6 +1,6 @@
 ## Portfolio v1
 
-Portfolio website version 1, built with HTML and SCSS. [Live Demo](hhttps://kriscollinsmy.github.io/)
+Portfolio website version 1, built with HTML and SCSS. [Live Demo](https://kriscollinsmy.github.io/)
 
 ## Screenshots
 
